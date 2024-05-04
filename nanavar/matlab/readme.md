@@ -4,4 +4,5 @@ Here, we evaluate the impact of missing datapoints on the Allan SD estimator. To
 
 First, we consider single missing datapoints regularly spread in the dataset. We include one NaN every 10, 8, 6, 4, and 2 datapoints (practically, in the latter case it is recommended to resample your dataset at half the resolution rather than computing the Allan SD with the original dataset). With regular missing datapoints, the Allan SD estimator suffers systematic underestimation of the Allan SD from the original dataset. The obtained values remain qualitatively accurate (r²>0.9) until 50% of the datapoints are missing, when the accuracy of the estimator is strongly decreased.
 
-Regular gaps.pdf _Figure 1: Datasets and Allan SD estimation for increasing number of regularly spaced single missing datapoints (every 10, 8, 6, 4, 2 points, in orange, yellow, purple, green, and blue, respectetively). _
+![Regular gaps](https://github.com/MathieuIso/Glaciotools/assets/168548936/45a9c74d-5ab4-4963-ab09-6db99566cc88)
+_Figure 1: Datasets and Allan SD estimation for increasing number of regularly spaced single missing datapoints (every 10, 8, 6, 4, 2 points, in orange, yellow, purple, green, and blue, respectetively). _
