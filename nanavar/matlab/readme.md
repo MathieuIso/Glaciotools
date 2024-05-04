@@ -1,4 +1,4 @@
-This toolbox contains a modified version of the Allan Standard Deviation calculation that can take into account missing values (included as NaN). In the current version, regular sampling of the input time series is still needed.
+This toolbox contains a modified version of the Allan Standard Deviation calculation that can take into account missing values (included as NaN). In the current version, regular sampling of the input time series is still needed. Please cite Casado, M. et al. New infrared spectroscopy instrument for reliable low humidity water vapour isotopic composition measurements. AMT, 1–22 (2023, under review), and Lauwers, T. et al, (To be submitted).
 
 Here, we evaluate the impact of missing datapoints on the Allan SD estimator. To do so, we use a synthetic variable y combining a white noise, a red noise, and a trend. We add different amounts and structure of missing datapoints as NaN on this variable y and create sets of ynan. We compute the Allan SD on y and ynan in these case studies.
 
